@@ -37,7 +37,7 @@ def analyzed(request):
     if check2=="on":
         i=0
         for char in text:
-            if char not in [" ","\n"]:
+            if char not in [" ","\n","\r"]:
                 i=i+1
         analyze=text
         params={"output":analyze,"total":"Total number of characters:","total_char":i}
